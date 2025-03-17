@@ -403,3 +403,10 @@ function startAnimations() {
         overlay.classList.add('animate-overlay');
     }
 }
+
+/**
+ * Set the overlay to display: none after the animation is finished.
+ */
+document.querySelector('.overlay').addEventListener('animationend', function () {
+    this.style.display = 'none';
+});
